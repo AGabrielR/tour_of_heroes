@@ -13,6 +13,7 @@
 ActiveRecord::Schema[7.0].define(version: 2022_03_23_183217) do
   create_table "heroes", force: :cascade do |t|
     t.string "name", null: false
+    t.boolean "active", default: true
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
